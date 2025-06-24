@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_instantnoodlep.mk
+    $(LOCAL_DIR)/voltage_instantnoodlep.mk
+
+COMMON_LUNCH_CHOICES := \
+    voltage_instantnoodlep-userdebug \
+    voltage_instantnoodlep-user \
+    voltage_instantnoodlep-eng
