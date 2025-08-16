@@ -61,3 +61,6 @@ $(call inherit-product, device/oneplus/sm8250-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/instantnoodlep/instantnoodlep-vendor.mk)
+
+# Build Signing
+include vendor/custom-priv/keys/keys.mk

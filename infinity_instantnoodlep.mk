@@ -12,14 +12,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from instantnoodlep device
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_instantnoodlep
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+#Infinity Adaptations
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := cbcb00
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true 
+EXTRA_UDFPS_ANIMATIONS := true
+
+PRODUCT_NAME := infinity_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := IN2025
+PRODUCT_MODEL := IN2021
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
