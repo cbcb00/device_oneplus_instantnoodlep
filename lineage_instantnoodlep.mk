@@ -28,6 +28,20 @@ AXION_CAMERA_REAR_INFO := 48,48,8,5
 AXION_CAMERA_FRONT_INFO := 16
 TARGET_ENABLE_BLUR := true
 
+# HBM
+HBM_SUPPORTED := true
+HBM_NODE := "/sys/class/drm/card0-DSI-1/hbm"
+
+# Bypass Charging
+BYPASS_CHARGE_SUPPORTED := true
+AXION_BATTERY_IDLE_NODE := "/sys/class/power_supply/battery/input_suspend"
+AXION_BATTERY_IDLE_ON := "1"
+AXION_BATTERY_IDLE_OFF := "0"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.perf.scroll_opt=true \
+    persist.sys.perf.scroll_opt.heavy_app=1
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
