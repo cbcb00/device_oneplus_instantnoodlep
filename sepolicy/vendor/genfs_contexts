@@ -1,0 +1,2 @@
+# GPU Boost
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0 u:object_r:sysfs_gpu:s0
