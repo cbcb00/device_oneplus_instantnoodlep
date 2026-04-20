@@ -34,6 +34,10 @@ TARGET_INCLUDE_AXFX := true
 HBM_SUPPORTED := true
 HBM_NODE := "/sys/class/drm/card0-DSI-1/hbm"
 
+# GPU boost paths
+GPU_FREQS_PATH := /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/devfreq/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/devfreq/min_freq
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.perf.scroll_opt=true \
     persist.sys.perf.scroll_opt.heavy_app=1
